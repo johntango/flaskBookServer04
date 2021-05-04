@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <h1>Hello {{ username }}</h1>
+    <body>
+        <h1>Books Available</h1>
+        <ul>
+        {% for book in books %} 
+            <li>
+                {{book['author']}}	
+                {{book['title']}}
+            </li>
+        {%endfor%}
+        </ul>
+    </body>
+</html>
